@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9bbccdf472.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Women jacket</title>
+    <meta name="description" content="This is a jacket sales page for women" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="navCont">
+        <a href="index.html"
+          ><img class="logo" src="images/rainydayslogo.png"
+        /></a>
+        <label for="hamburgerMenu" class="hamburgerLabel"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="women.html"><li class="active">Women</li></a>
+              <a href="men.html"><li>Men</li></a>
+              <a href="children.html"><li>Children</li></a>
+              <a href="favorite.html"><i class="fas fa-heart"></i></a>
+              <a href="login.html"><i class="fas fa-user"></i></a>
+              <a href="cart.html"
+                ><div id="counter" class="counter">0</div>
+                <i class="fas fa-shopping-cart"></i
+              ></a>
+            </ul>
+          </nav>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="womensale">
+        <img
+          src="images/women1.jpg"
+          class="img"
+          alt="blue jacket with white stripes"
+        />
+        <div class="small-item">
+          <p class="info">NAME: Ski blue mountain</p>
+          <p class="info">PRICE: $59.00</p>
+          <p class="info">COLOR:</p>
+          <div class="yellowball"></div>
+          <input
+            type="radio"
+            name="color"
+            class="color"
+            value="yellow"
+            id="yellow"
+          />
+          <label for="yellow">yellow</label>
+          <div class="blueball"></div>
+          <input
+            type="radio"
+            name="color"
+            class="color"
+            value="blue"
+            id="blue"
+          />
+          <label for="blue">blue</label>
+          <p class="info">SIZE:</p>
+          <input type="radio" name="size" class="size" value="xs" id="xs" />
+          <label for="xs">XS</label>
+          <input type="radio" name="size" class="size" value="s" id="s" />
+          <label for="s">S</label>
+          <input type="radio" name="size" class="size" value="m" id="m" />
+          <label for="m">M</label>
+          <input type="radio" name="size" class="size" value="l" id="l" />
+          <label for="l">L</label>
+          <input type="radio" name="size" class="size" value="xl" id="xl" />
+          <label for="xl">XL</label>
+        </div>
+        <div class="right-item">
+          <button id="addToFav" class="addbutton">
+            favorite <i class="fas fa-heart heart"></i>
+          </button>
+
+          <button id="addToCart" class="addbutton">
+            <i class="fas fa-shopping-cart cart"></i>add to cart
+          </button>
+        </div>
+      </section>
+      <div class="otherimg">
+        <img
+          src="images/women1.jpg"
+          class="img"
+          alt="blue jacket with white stripes"
+        />
+        <img
+          src="images/women1.jpg"
+          class="img"
+          alt="blue jacket with white stripes"
+        />
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="stores.html">Stores</a></li>
+      </ul>
+      Copyright &copy;
+    </footer>
+    <script src="js/addto.js"></script>
+  </body>
+</html>

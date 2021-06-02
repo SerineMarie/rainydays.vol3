@@ -1,0 +1,115 @@
+:root {
+  --red: #ad422c;
+  --blue: #0a3641;
+  --orange: #cb9a21;
+  --lightorange: #ebe1c2;
+  --white: #ddd;
+  --darkgrey: #707070;
+  --darkred: #741009;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+}
+
+.navbar .counter {
+  font-size: 0.5em;
+}
+
+/*NAVIGATION BAR START*/
+.logo {
+  width: 60%;
+  margin-top: 2%;
+}
+header {
+  background: var(--orange);
+  position: fixed;
+  margin-top: -3%;
+  width: 100%;
+}
+
+/* ul {
+  float: right;
+  margin-top: -4%;
+  margin-right: 15%;
+} */
+
+nav li {
+  display: block;
+}
+
+.active {
+  color: var(--red);
+}
+
+.hamburgerLabel {
+  color: var(--blue);
+  display: block;
+  padding: 1%;
+  font-size: 2.1em;
+  margin-top: 1%;
+  float: right;
+}
+
+.navbar,
+#hamburgerMenu {
+  display: none;
+}
+
+#hamburgerMenu:checked ~ .navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  margin: -5% 2% 4% 0%;
+}
+
+.navbar a {
+  font-family: Tahoma, verdana, sans-serif;
+  font-size: 1.8em;
+  color: var(--blue);
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+input {
+  font-family: Tahoma, verdana, sans-serif;
+}
+
+/*NAVIGATION BAR END*/
+
+/*MEIDA QUERY START*/
+@media (min-width: 1024px) {
+  .hamburgerLabel {
+    display: none;
+  }
+  .logo {
+    width: 30%;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    float: right;
+    margin-top: -4%;
+    margin-right: 15%;
+  }
+
+  ul a {
+    padding: 2%;
+  }
+
+  input {
+    /* float: right; */
+    /* margin-right: 2%; */
+    margin-left: 80%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+  }
+}
+/*MEDIA QUERY END*/

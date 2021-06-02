@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9bbccdf472.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Your favorite items</title>
+    <meta name="description" content="Favorite items page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navCont">
+        <a href="index.html"
+          ><img class="logo" src="images/rainydayslogo.png"
+        /></a>
+        <label for="hamburgerMenu" class="hamburgerLabel"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="women.html"><li>Women</li></a>
+              <a href="men.html"><li>Men</li></a>
+              <a href="children.html"><li>Children</li></a>
+              <a href="favorite.html"><i class="fas fa-heart active"></i></a>
+              <a href="login.html"><i class="fas fa-user"></i></a>
+              <a href="cart.html"
+                ><div id="counter" class="counter">0</div>
+                <i class="fas fa-shopping-cart"></i
+              ></a>
+            </ul>
+          </nav>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="login">favorite items</p>
+      <section class="favoritelayout">
+        <img
+          src="images/women1.jpg"
+          class="img"
+          alt="blue jacket with white stripes"
+        />
+        <div class="small-item">
+          <p class="info">NAME: Ski blue mountain</p>
+          <p class="info">PRICE: $59.00</p>
+          <p class="info">COLOR:</p>
+          <div class="blueball"></div>
+          <input
+            type="radio"
+            name="color"
+            class="color"
+            value="blue"
+            id="blue"
+          />
+          <label for="blue" alt="color blue"></label>
+          <p class="info">SIZE:</p>
+          <input type="radio" name="size" class="size" value="m" id="m" />
+          <label for="m">M</label>
+          <button class="delete">
+            delete form favorite <i class="fas fa-trash"></i>
+          </button>
+        </div>
+        <img src="images/man1.jpg" class="img" alt="grey and blue stripes" />
+        <div class="small-item">
+          <p class="info">NAME: Ski blue mountain</p>
+          <p class="info">PRICE: $59.00</p>
+          <p class="info">COLOR:</p>
+          <div class="blueball"></div>
+          <p class="info">SIZE:</p>
+          <input
+            type="radio"
+            name="color"
+            class="color"
+            value="blue"
+            id="blue"
+          />
+          <label for="blue" alt="color blue"></label>
+          <input type="radio" name="size" class="size" value="l" id="l" />
+          <label for="l">L</label>
+          <button class="delete">
+            delete form favorite <i class="fas fa-trash"></i>
+          </button>
+        </div>
+        <img
+          src="images/children2.jpg"
+          class="img"
+          alt="black and white jacket"
+        />
+        <div class="small-item">
+          <p class="info">NAME: Ski blue mountain</p>
+          <p class="info">PRICE: $59.00</p>
+          <p class="info">COLOR:</p>
+          <div class="blueball"></div>
+          <input
+            type="radio"
+            name="color"
+            class="color"
+            value="blue"
+            id="blue"
+          />
+          <label for="blue" alt="color blue"></label>
+          <p class="info">SIZE:</p>
+          <input type="radio" name="size" class="size" value="s" id="s" />
+          <label for="s">S</label>
+          <button class="delete">
+            delete form favorite <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="stores.html">Stores</a></li>
+      </ul>
+      Copyright &copy;
+    </footer>
+    <script src="js/addto.js"></script>
+  </body>
+</html>

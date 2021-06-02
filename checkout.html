@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9bbccdf472.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Check out</title>
+    <meta name="description" content="Checkout page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="navCont">
+        <a href="index.html"
+          ><img class="logo" src="images/rainydayslogo.png"
+        /></a>
+        <label for="hamburgerMenu" class="hamburgerLabel"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="women.html"><li>Women</li></a>
+              <a href="men.html"><li>Men</li></a>
+              <a href="children.html"><li>Children</li></a>
+              <a href="favorite.html"><i class="fas fa-heart"></i></a>
+              <a href="login.html"><i class="fas fa-user"></i></a>
+              <a href="cart.html"
+                ><div id="counter" class="counter">0</div>
+                <i class="fas fa-shopping-cart"></i
+              ></a>
+            </ul>
+          </nav>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="login">checkout</p>
+      <form>
+        <div class="checkout">
+          <div class="namecheck">
+            <p class="name-price" id="name">Full Name</p>
+            <label for="name"
+              >fullname<input type="text" name="name" id="fullName1"
+            /></label>
+            <label for="name"
+              >lastname<input type="text" name="name" id="fullName2"
+            /></label>
+            <div id="fullNameError">Please enter your full name</div>
+          </div>
+
+          <div class="addresscheck">
+            <p class="name-price" id="address">shipping address</p>
+            <label for="address"
+              >Address<input type="text" name="address" id="address1"
+            /></label>
+            <label for="address"
+              >Postal code<input type="number" name="adress" id="address2"
+            /></label>
+            <div id="addressError">Please enter a vaild address</div>
+          </div>
+        </div>
+        <a href="payment.html"
+          ><button
+            type="submit"
+            value="contiune to payment"
+            id="submitted"
+            class="input continuebtn"
+          >
+            Continue to payment
+          </button></a
+        >
+      </form>
+      <p class="loggedin"></p>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="stores.html">Stores</a></li>
+      </ul>
+      Copyright &copy;
+    </footer>
+    <script src="js/checkout.js"></script>
+    <script src="js/addto.js"></script>
+  </body>
+</html>

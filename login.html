@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9bbccdf472.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login site</title>
+    <meta name="description" content="Login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navCont">
+        <a href="index.html"
+          ><img class="logo" src="images/rainydayslogo.png"
+        /></a>
+        <label for="hamburgerMenu" class="hamburgerLabel"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="women.html"><li>Women</li></a>
+              <a href="men.html"><li>Men</li></a>
+              <a href="children.html"><li>Children</li></a>
+              <a href="favorite.html"><i class="fas fa-heart"></i></a>
+              <a href="login.html"><i class="fas fa-user active"></i></a>
+              <a href="cart.html"
+                ><div id="counter" class="counter">0</div>
+                <i class="fas fa-shopping-cart"></i
+              ></a>
+            </ul>
+          </nav>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+    </header>
+    >
+    <main>
+      <p class="login">log in</p>
+      <div class="checkout">
+        <form action="loggedin.html" method="GET">
+          <div class="emailcheck">
+            <label for="email"
+              >Your email address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                class="input"
+              />
+            </label>
+            <div id="emailError">Please enter a valid email address</div>
+          </div>
+          <div class="passwordcheck">
+            <label for="password"
+              >Your password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input"
+            /></label>
+            <div id="passwordError">Password must be minimum 6 characters</div>
+          </div>
+
+          <button
+            type="submit"
+            value="contiune"
+            id="submitted"
+            class="input continuebtn"
+          >
+            Continue
+          </button>
+        </form>
+      </div>
+      <p class="loggedin"></p>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="stores.html">Stores</a></li>
+      </ul>
+      Copyright &copy;
+    </footer>
+    <script src="js/loginform.js"></script>
+    <script src="js/addto.js"></script>
+  </body>
+</html>
