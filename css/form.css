@@ -1,97 +1,87 @@
+:root {
+  --red: #ad422c;
+  --errorred: #d93d1a;
+  --blue: #0a3641;
+  --orange: #cb9a21;
+  --lightorange: #ebe1c2;
+  --white: #ffff;
+  --offwhite: #fefefe;
+  --darkgrey: #707070;
+  --darkred: #741009;
+  --ligthgrey: #dddddd;
+}
+.error {
+  display: none;
+  color: var(--errorred);
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.continue {
+  font-family: Tahoma, verdana, sans-serif;
+  color: var(--blue);
+}
+
 form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2%;
+  color: var(--darkred);
+  font-family: Tahoma, verdana, sans-serif;
+}
+
+form input,
+form label {
+  margin: 2% 0% 3% 0%;
 }
 
 input {
-  border-radius: 25px;
-  padding: 5px;
-  margin: 5px;
-  border: solid #707070;
-  background-color: #dddddd;
+  font-size: 0.8em;
+  border-radius: 5%;
 }
 
-label {
-  color: #741009;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.continuebtn {
-  background-color: #dddddd;
-  border: solid #707070;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: bold;
-  color: #741009;
-  border-radius: 25px;
-  float: right;
-  margin-right: 75px;
-}
-
-.login {
+/*BUTTONS START*/
+.delete,
+.continue {
   font-family: Tahoma, verdana, sans-serif;
-  color: #741009;
-  text-align: center;
-  font-size: 2em;
-  font-weight: 500;
   text-transform: uppercase;
-  padding-top: 15%;
+  color: var(--blue);
+  background: var(--offwhite);
+  border-radius: 10%;
+  padding: 1%;
 }
 
-#emailError,
-#passwordError,
-#nameError,
-#cardNrError,
-#expireDateError,
-#cvcError,
-#fullNameError,
-#addressError {
-  display: none;
-  color: red;
-  margin-left: 45%;
-}
-
-.paymentForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2%;
-  margin: 5%;
-}
-
-.checkout {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5%;
+.checkOut {
+  font-family: Tahoma, verdana, sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--blue);
+  border-radius: 10%;
+  padding: 1%;
   margin-bottom: 5%;
+  margin-left: 5%;
 }
+/*BUTTONS END*/
 
-.numberbox,
-.namebox,
-.expirebox,
-.cvcbox,
-.buttonbox {
-  margin-bottom: 3%;
-}
+/*MEDIA QUERY*/
 
-.namecheck,
-.addresscheck {
-  margin-bottom: 10%;
-}
+@media (min-width: 1024px) {
+  form {
+    font-size: 1.8em;
+  }
+  form input,
+  form label {
+    margin: 1% 0% 1% 0%;
+  }
 
-.passwordcheck,
-.emailcheck {
-  margin-bottom: 2%;
-}
-
-#name,
-#address {
-  text-align: center;
+  form input {
+    font-size: 0.5em;
+  }
+  .delete,
+  .continue,
+  .checkOut {
+    padding: 0.5%;
+  }
 }

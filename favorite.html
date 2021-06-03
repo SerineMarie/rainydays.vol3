@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <script
       src="https://kit.fontawesome.com/9bbccdf472.js"
@@ -8,10 +8,14 @@
     <title>Your favorite items</title>
     <meta name="description" content="Favorite items page" />
     <meta name="viewport" content="width=device-width, initial-scale=1,0" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
     <link href="css/general.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/colors.css" rel="stylesheet" />
+    <link href="css/icons.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/images.css" rel="stylesheet" />
   </head>
-
   <body>
     <header>
       <div class="navCont">
@@ -42,89 +46,65 @@
       </div>
     </header>
     <main>
-      <p class="login">favorite items</p>
-      <section class="favoritelayout">
-        <img
-          src="images/women1.jpg"
-          class="img"
-          alt="blue jacket with white stripes"
-        />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
-          />
-          <label for="blue" alt="color blue"></label>
-          <p class="info">SIZE:</p>
-          <input type="radio" name="size" class="size" value="m" id="m" />
-          <label for="m">M</label>
-          <button class="delete">
+      <h1>favorite items</h1>
+      <div class="productsContainer">
+        <div class="products">
+          <img src="images/women1.jpg" alt="blue jacket with white stripes" />
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
+            <div class="blueball"></div>
+            <p>SIZE: M</p>
+          </div>
+          <button id="delete" class="delete">
             delete form favorite <i class="fas fa-trash"></i>
           </button>
         </div>
-        <img src="images/man1.jpg" class="img" alt="grey and blue stripes" />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <p class="info">SIZE:</p>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
-          />
-          <label for="blue" alt="color blue"></label>
-          <input type="radio" name="size" class="size" value="l" id="l" />
-          <label for="l">L</label>
-          <button class="delete">
+
+        <div class="products">
+          <img src="images/man1.jpg" alt="grey and blue stripes" />
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
+            <div class="blueball"></div>
+            <p>SIZE: L</p>
+          </div>
+          <button id="delete" class="delete">
             delete form favorite <i class="fas fa-trash"></i>
           </button>
         </div>
-        <img
-          src="images/children2.jpg"
-          class="img"
-          alt="black and white jacket"
-        />
-        <div class="small-item">
-          <p class="info">NAME: Ski blue mountain</p>
-          <p class="info">PRICE: $59.00</p>
-          <p class="info">COLOR:</p>
-          <div class="blueball"></div>
-          <input
-            type="radio"
-            name="color"
-            class="color"
-            value="blue"
-            id="blue"
+
+        <div class="products">
+          <img
+            src="images/children2.jpg"
+            class="kidjacket"
+            alt="black and white jacket"
           />
-          <label for="blue" alt="color blue"></label>
-          <p class="info">SIZE:</p>
-          <input type="radio" name="size" class="size" value="s" id="s" />
-          <label for="s">S</label>
-          <button class="delete">
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
+            <div class="blueball"></div>
+            <p>SIZE: S</p>
+          </div>
+          <button id="delete" class="delete">
             delete form favorite <i class="fas fa-trash"></i>
           </button>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="stores.html">Stores</a></li>
-      </ul>
-      Copyright &copy;
+      <img class="backgroundimg" src="images/rainydayslogo01.png" />
+      <div class="footer">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="stores.html">Stores</a>
+      </div>
+      <p>&copy; Rainydays 2021</p>
     </footer>
+    <script src="js/deleteItem.js"></script>
     <script src="js/addto.js"></script>
   </body>
 </html>

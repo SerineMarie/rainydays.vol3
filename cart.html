@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <script
       src="https://kit.fontawesome.com/9bbccdf472.js"
@@ -8,137 +8,105 @@
     <title>Shopping cart</title>
     <meta name="description" content="Shopping cart" />
     <meta name="viewport" content="width=device-width, initial-scale=1,0" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
     <link href="css/general.css" rel="stylesheet" />
-
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/colors.css" rel="stylesheet" />
+    <link href="css/icons.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/images.css" rel="stylesheet" />
   </head>
-
   <body>
     <header>
       <div class="navCont">
-          <a href="index.html"><img class="logo" src="images/rainydayslogo.png"></a>
-          <label for="hamburgerMenu" class="hamburgerLabel"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="hamburgerMenu" />
-          <div class="navbar">
-            <nav>
-                <ul>
-                    <a href="index.html" ><li>Home</li></a>
-                    <a href="women.html"><li>Women </li></a>
-                    <a href="men.html"><li>Men</li></a>
-                    <a href="children.html"><li>Children</li></a>
-                    <a href="favorite.html"><i class="fas fa-heart"></i></a>
-                    <a href="login.html"><i class="fas fa-user"></i></a>
-                    <a href="cart.html"><div id="counter" class="counter">0</div><i class="fas fa-shopping-cart active"></i></a>
-                </ul>
-            </nav>
-            <input type="text" placeholder="Search">
+        <a href="index.html"
+          ><img class="logo" src="images/rainydayslogo.png"
+        /></a>
+        <label for="hamburgerMenu" class="hamburgerLabel"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="navbar">
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="women.html"><li>Women</li></a>
+              <a href="men.html"><li>Men</li></a>
+              <a href="children.html"><li>Children</li></a>
+              <a href="favorite.html"><i class="fas fa-heart"></i></a>
+              <a href="login.html"><i class="fas fa-user"></i></a>
+              <a href="cart.html"
+                ><div id="counter" class="counter">0</div>
+                <i class="fas fa-shopping-cart active"></i
+              ></a>
+            </ul>
+          </nav>
+          <input type="text" placeholder="Search" />
         </div>
       </div>
-  </header>
+    </header>
     <main>
-      <p class="login">your cart</p>
-      <section class="favoritelayout" id="cartItems">
-        <div class="cartItem">
-          <img
-            src="images/women1.jpg"
-            class="img"
-            id="cartImg"
-            alt="blue jacket with white stripes"
-          />
-          <div class="small-item">
-            <p class="info">NAME: Ski blue mountain</p>
-            <p class="info" id="itemPrice">PRICE: $59.00</p>
-            <p class="info">COLOR:</p>
+      <h1>your cart</h1>
+      <div class="productsContainer">
+        <div class="products">
+          <img src="images/women1.jpg" alt="blue jacket with white stripes" />
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
             <div class="blueball"></div>
-            <input
-              type="radio"
-              name="color"
-              class="color"
-              value="blue"
-              id="blue"
-            />
-            <label for="blue" alt="color blue"></label>
-            <p class="info">SIZE:</p>
-            <input type="radio" name="size" class="size" value="m" id="m" />
-            <label for="m">M</label>
-            <button class="delete">
-              delete form cart <i class="fas fa-trash"></i>
-            </button>
+            <p>SIZE: M</p>
           </div>
+          <button id="delete" class="delete">
+            delete form cart <i class="fas fa-trash"></i>
+          </button>
         </div>
-        <div class="cartItem">
-          <img
-            src="images/man1.jpg"
-            class="img"
-            id="cartImg"
-            alt="grey and blue stripes"
-          />
-          <div class="small-item">
-            <p class="info">NAME: Ski blue mountain</p>
-            <p class="info" id="itemPrice">PRICE: $59.00</p>
-            <p class="info">COLOR:</p>
+
+        <div class="products">
+          <img src="images/man1.jpg" alt="grey and blue stripes" />
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
             <div class="blueball"></div>
-            <p class="info">SIZE:</p>
-            <input
-              type="radio"
-              name="color"
-              class="color"
-              value="blue"
-              id="blue"
-            />
-            <label for="blue" alt="color blue"></label>
-            <input type="radio" name="size" class="size" value="l" id="l" />
-            <label for="l">L</label>
-            <button class="delete">
-              delete form cart <i class="fas fa-trash"></i>
-            </button>
+            <p>SIZE: L</p>
           </div>
+          <button id="delete" class="delete">
+            delete form cart <i class="fas fa-trash"></i>
+          </button>
         </div>
-        <div class="cartItem">
+
+        <div class="products">
           <img
             src="images/children2.jpg"
-            class="img"
-            id="cartImg"
+            class="kidjacket"
             alt="black and white jacket"
           />
-          <div class="small-item">
-            <p class="info">NAME: Ski blue mountain</p>
-            <p class="info" id="itemPrice">PRICE: $59.00</p>
-            <p class="info">COLOR:</p>
+          <div class="productInfo">
+            <p>NAME: Ski Blue Mountain</p>
+            <p>PRICE: $59.00</p>
+            <p>COLOR:</p>
             <div class="blueball"></div>
-            <input
-              type="radio"
-              name="color"
-              class="color"
-              value="blue"
-              id="blue"
-            />
-            <label for="blue" alt="color blue"></label>
-            <p class="info">SIZE:</p>
-            <input type="radio" name="size" class="size" value="s" id="s" />
-            <label for="s">S</label>
-            <button class="delete">
-              delete form cart <i class="fas fa-trash"></i>
+            <p>SIZE: S</p>
           </div>
-        </div>
-        <p class="login">Total price: $177.00</p>
+          <button id="delete" class="delete">
+            delete form cart <i class="fas fa-trash"></i>
           </button>
-            <a href="checkout.html"
-              ><button class="input continuebtn">
-                continue to checkout
-              </button></a>
-      </section>
+        </div>
+      </div>
+      <p class="totalPrice">Total price: $177.00</p>
+      <button class="checkOut">continue to checkout</button>
     </main>
     <footer>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="stores.html">Stores</a></li>
-      </ul>
-      Copyright &copy;
+      <img class="backgroundimg" src="images/rainydayslogo01.png" />
+      <div class="footer">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="stores.html">Stores</a>
+      </div>
+      <p>&copy; Rainydays 2021</p>
     </footer>
     <script src="js/deleteItem.js"></script>
     <script src="js/addto.js"></script>
-
   </body>
 </html>

@@ -1,0 +1,28 @@
+:root {
+  --red: #ad422c;
+  --blue: #0a3641;
+  --orange: #cb9a21;
+  --lightorange: #ebe1c2;
+  --white: #ffff;
+  --offwhite: #fefefe;
+  --darkgrey: #707070;
+  --darkred: #741009;
+  --ligthgrey: #dddddd;
+}
+
+.yellowball {
+  width: 35px;
+  height: 35px;
+  background-color: var(--orange);
+  border-radius: 15%;
+  margin-bottom: 2%;
+}
+
+.blueball {
+  width: 35px;
+  height: 35px;
+  background-color: var(--blue);
+  border-radius: 15%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}

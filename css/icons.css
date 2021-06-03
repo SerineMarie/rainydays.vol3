@@ -1,0 +1,48 @@
+:root {
+  --red: #ad422c;
+  --blue: #0a3641;
+  --orange: #cb9a21;
+  --lightorange: #ebe1c2;
+  --white: #ffff;
+  --offwhite: #fefefe;
+  --darkgrey: #707070;
+  --darkred: #741009;
+  --ligthgrey: #dddddd;
+}
+
+.productInfo {
+  font-size: 0.8em;
+}
+
+h1 {
+  position: relative;
+}
+
+.totalPrice {
+  font-family: Tahoma, verdana, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: var(--darkred);
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 1024px) {
+  .productsContainer {
+    display: flex;
+    margin-top: -13%;
+  }
+
+  img {
+    width: 60%;
+  }
+  .kidjacket {
+    height: 60%;
+  }
+
+  .totalPrice {
+    margin-top: -2%;
+  }
+}

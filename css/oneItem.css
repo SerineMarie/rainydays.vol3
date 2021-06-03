@@ -1,0 +1,148 @@
+.oneJacket {
+  width: 90%;
+}
+
+.size,
+.color {
+  display: none;
+}
+
+#yellow + label,
+#blue + label {
+  color: #0a3641;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5% 2% 2% 2%;
+}
+
+#yellow:checked + label,
+#blue:checked + label {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+#xs + label,
+#s + label,
+#m + label,
+#l + label,
+#xl + label {
+  color: #0a3641;
+  font-weight: bold;
+  background-color: #dddddd;
+  border: solid #707070;
+  border-radius: 15%;
+  padding: 1%;
+  margin: 1%;
+}
+
+#xs:checked + label,
+#s:checked + label,
+#m:checked + label,
+#l:checked + label,
+#xl:checked + label {
+  color: #0a3641;
+  background-color: #ad422c;
+  text-decoration: underline;
+}
+
+.addto {
+  font-family: Tahoma, verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--offwhite);
+  border-radius: 10%;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*MEDIA QUERY START*/
+@media (min-width: 150px) and (max-width: 499px) {
+  .productInfo p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+  .oneJacket {
+    width: 60%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .oneJacket {
+    width: 40%;
+  }
+  .bottomImg {
+    margin-bottom: 15%;
+  }
+
+  .bottomImg img {
+    padding: 1%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1275px) {
+  .oneJacket {
+    margin-top: -12%;
+    width: 40%;
+  }
+
+  .productInfo {
+    position: absolute;
+    margin-top: -40%;
+    margin-left: 55%;
+  }
+
+  .productInfo p {
+    font-size: 1em;
+  }
+
+  .addto {
+    padding: 0%;
+    margin-left: 10%;
+  }
+
+  .bottomImg {
+    margin: 8% 0% 15% 0%;
+  }
+
+  .bottomImg img {
+    padding: 2%;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 1274px) {
+  .productsContainer {
+    margin-top: -5%;
+  }
+
+  .oneJacket {
+    width: 40%;
+  }
+
+  .productInfo {
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 50%;
+  }
+
+  .productInfo p {
+    font-size: 1.3em;
+  }
+
+  .addto {
+    padding: 1%;
+  }
+  .bottomImg img {
+    width: 25%;
+    padding: 2%;
+    border-radius: 10%;
+    margin-bottom: 15%;
+    margin-left: 5%;
+  }
+}
+
+/*MEDIA QUERY END*/

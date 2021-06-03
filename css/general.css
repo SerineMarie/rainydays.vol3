@@ -13,10 +13,6 @@ body {
   padding: auto;
 }
 
-.navbar .counter {
-  font-size: 0.5em;
-}
-
 /*NAVIGATION BAR START*/
 .logo {
   width: 60%;
@@ -25,15 +21,9 @@ body {
 header {
   background: var(--orange);
   position: fixed;
-  margin-top: -3%;
   width: 100%;
+  z-index: 200;
 }
-
-/* ul {
-  float: right;
-  margin-top: -4%;
-  margin-right: 15%;
-} */
 
 nav li {
   display: block;
@@ -53,7 +43,8 @@ nav li {
 }
 
 .navbar,
-#hamburgerMenu {
+#hamburgerMenu,
+.radiobtn {
   display: none;
 }
 
@@ -69,16 +60,46 @@ nav li {
   font-family: Tahoma, verdana, sans-serif;
   font-size: 1.8em;
   color: var(--blue);
+  text-decoration: none;
 }
 
 .navbar a:hover {
   text-decoration: underline;
 }
+
 input {
   font-family: Tahoma, verdana, sans-serif;
 }
 
+.navbar .counter {
+  font-size: 0.5em;
+}
 /*NAVIGATION BAR END*/
+
+/*FOOTER START*/
+footer {
+  background: var(--lightorange);
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--blue);
+  font-family: Tahoma, verdana, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+
+.backgroundimg {
+  position: absolute;
+  width: 100%;
+  margin-top: -8%;
+  opacity: 25%;
+}
+/*FOOTER END*/
 
 /*MEIDA QUERY START*/
 @media (min-width: 1024px) {
@@ -86,7 +107,7 @@ input {
     display: none;
   }
   .logo {
-    width: 30%;
+    width: 20%;
   }
 
   .navbar {
@@ -104,12 +125,20 @@ input {
     padding: 2%;
   }
 
-  input {
-    /* float: right; */
-    /* margin-right: 2%; */
+  .navbar input {
     margin-left: 80%;
     margin-top: -1%;
     margin-bottom: 1%;
+  }
+
+  .footer {
+    margin-top: -5%;
+  }
+  .backgroundimg {
+    width: 40%;
+    margin-top: -5%;
+    margin-left: 30%;
+    opacity: 25%;
   }
 }
 /*MEDIA QUERY END*/
