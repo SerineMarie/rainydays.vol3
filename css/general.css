@@ -11,6 +11,7 @@
 body {
   margin: auto;
   padding: auto;
+  background: var(--lightorange);
 }
 
 /*NAVIGATION BAR START*/
@@ -67,7 +68,7 @@ nav li {
   text-decoration: underline;
 }
 
-input {
+.navbar input {
   font-family: Tahoma, verdana, sans-serif;
 }
 
@@ -80,9 +81,11 @@ input {
 footer {
   background: var(--lightorange);
 }
+
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer a {
@@ -93,12 +96,6 @@ footer a {
   margin-bottom: 3%;
 }
 
-.backgroundimg {
-  position: absolute;
-  width: 100%;
-  margin-top: -8%;
-  opacity: 25%;
-}
 /*FOOTER END*/
 
 /*MEIDA QUERY START*/
@@ -132,13 +129,10 @@ footer a {
   }
 
   .footer {
+    padding-top: 5%;
     margin-top: -5%;
-  }
-  .backgroundimg {
-    width: 40%;
-    margin-top: -5%;
-    margin-left: 30%;
-    opacity: 25%;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 /*MEDIA QUERY END*/

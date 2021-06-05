@@ -30,6 +30,9 @@ h1 {
 /*MEDIA QUERY*/
 
 @media (min-width: 1024px) {
+  footer {
+    margin-top: 10%;
+  }
   .productsContainer {
     display: flex;
     margin-top: -13%;

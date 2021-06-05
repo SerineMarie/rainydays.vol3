@@ -10,10 +10,15 @@
   --darkred: #741009;
   --ligthgrey: #dddddd;
 }
+
 .error {
   display: none;
   color: var(--errorred);
   text-decoration: underline;
+  font-size: 1.2em;
+}
+
+.loginError {
   font-size: 0.8em;
 }
 
@@ -22,23 +27,52 @@
   color: var(--blue);
 }
 
-form {
+.login {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--darkred);
   font-family: Tahoma, verdana, sans-serif;
+  margin-bottom: 10%;
 }
 
-form input,
-form label {
+.login input,
+.login label {
   margin: 2% 0% 3% 0%;
 }
 
-input {
+.login input {
   font-size: 0.8em;
   border-radius: 5%;
+}
+
+.checkoutForm,
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5% 5% 10%;
+  font-family: Tahoma, verdana, sans-serif;
+}
+
+.checkoutForm label,
+.paymentForm label {
+  color: var(--blue);
+  font-size: 1.2em;
+}
+
+.checkoutForm p,
+.paymentForm p {
+  color: var(--red);
+  font-size: 1.2em;
+}
+
+.checkoutForm input,
+.paymentForm input {
+  font-family: Tahoma, verdana, sans-serif;
+  width: 80%;
+  padding: 1%;
+  margin: 1%;
 }
 
 /*BUTTONS START*/
@@ -58,30 +92,39 @@ input {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--blue);
+  background: var(--offwhite);
   border-radius: 10%;
-  padding: 1%;
-  margin-bottom: 5%;
-  margin-left: 5%;
+  width: 20%;
+  padding: 2%;
+  margin: 5% 0% 10% 0%;
 }
 /*BUTTONS END*/
 
 /*MEDIA QUERY*/
 
 @media (min-width: 1024px) {
-  form {
+  .login {
     font-size: 1.8em;
   }
-  form input,
-  form label {
+  .login input,
+  .login label {
     margin: 1% 0% 1% 0%;
   }
 
-  form input {
+  .login input {
     font-size: 0.5em;
   }
   .delete,
   .continue,
   .checkOut {
     padding: 0.5%;
+  }
+  .checkoutForm input,
+  .paymentForm input {
+    width: 30%;
+  }
+  .checkOut {
+    margin-left: 2%;
+    width: 12%;
   }
 }

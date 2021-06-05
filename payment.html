@@ -14,6 +14,7 @@
     <link href="css/layout.css" rel="stylesheet" />
     <link href="css/colors.css" rel="stylesheet" />
     <link href="css/images.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -45,63 +46,51 @@
       </div>
     </header>
     <main>
-      <p class="login">checkout</p>
-      <form class="paymentForm">
-        <div class="namebox">
-          <label for="name" class="name"
-            >card holder name<input type="text" name="name" id="name"
-          /></label>
-          <div id="nameError">Please enter card holder name</div>
+      <h1>checkout</h1>
+      <form
+        method="GET"
+        action="success.html"
+        onsubmit="return paymentValid()"
+        class="paymentForm"
+      >
+        <p>Card Information</p>
+        <label for="name">Card holder name</label>
+        <input type="text" name="name" id="name" />
+        <div class="error" id="nameError">Please enter card holder name</div>
+        <label for="number">Card number</label
+        ><input type="number" name="number" id="cardNr" />
+        <div class="error" id="cardNrError">Please enter 16 digits</div>
+
+        <label for="expire-date" class="expireDate">MM/YY</label
+        ><input
+          type="year"
+          name="expire-date"
+          placeholder="01/24"
+          id="expireDate"
+        />
+        <div class="error" id="expireDateError">
+          Please enter vaild a expire date
         </div>
 
-        <div class="numberbox">
-          <label for="number" class="number"
-            >card number<input type="number" name="number" id="cardNr"
-          /></label>
-          <div id="cardNrError">Please enter 16 digits</div>
-        </div>
+        <label for="number" class="cvc">CVC</label>
+        <input type="number" name="number" id="cvc" />
 
-        <div class="expirebox">
-          <label for="expire-date" class="expireDate"
-            >mm/yy<input
-              type="year"
-              name="expire-date"
-              placeholder="01/24"
-              id="expireDate"
-          /></label>
-          <div id="expireDateError">Please enter vaild a expire date</div>
-        </div>
-
-        <div class="cvcbox">
-          <label for="number" class="cvc"
-            >cvc
-            <input type="number" name="number" id="cvc" />
-          </label>
-          <div id="cvcError">Please enter 3 digits</div>
-        </div>
-        <a href="success.html"
-          ><button
-            type="submit"
-            value="contiune"
-            id="submitted"
-            class="input continuebtn"
-          >
-            Continue
-          </button></a
-        >
+        <div class="error" id="cvcError">Please enter 3 digits</div>
+        <button type="submit" class="checkOut">Complete order</button>
       </form>
       <p class="loggedin"></p>
     </main>
     <footer>
-      <img class="backgroundimg" src="images/rainydayslogo01.png" />
-      <div class="footer">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="stores.html">Stores</a>
+      <div style="background-image: url(images/rainydayslogo03.png)">
+        <div class="footer">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="stores.html">Stores</a>
+        </div>
       </div>
       <p>&copy; Rainydays 2021</p>
     </footer>
-    <script src="js/paymentform.js"></script>
     <script src="js/addto.js"></script>
+    <script src="js/paymentform.js"></script>
   </body>
 </html>

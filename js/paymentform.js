@@ -8,37 +8,37 @@ const cardNrError = document.querySelector("#cardNrError")
 const expireDateError = document.querySelector("#expireDateError")
 const cvcError = document.querySelector("#cvcError")
 
-
-function validation (event){
+function paymentValid (event){
     event.preventDefault();
-
-    if(nameValid.value.trim().length > 1){
+    if(checkLen(nameValid.value, 1) === true){
         nameError.style.display = "none";
     } else {
-        nameError.style.display = "block";
+        nameError.style.display ="block";
     }
 
-    
-    if(cvc.value.trim().length === 3){
-        cvcError.style.display = "none";
-    } else {
-        cvcError.style.display = "block";
-    }
-
-    if(cardNumber.value.length === 16){
+    if(checkLen(cardNumber.value, 15) === true){
         cardNrError.style.display = "none";
     } else {
         cardNrError.style.display = "block";
     }
-    
-    if(expireDate.value.length === 4){
-        expireDateError.style.display = "none";
+
+    if(checkLen(expireDate.value, 3) === true){
+        expireDateError.style.display ="none";
     } else {
-        expireDate.style.display = "block";
+        expireDateError.style.display = "block";
     }
 
+    if(checkLen(cvc.value, 2) === true){
+        cvcError.style.display = "none";
+    } else {
+        cvcError.style.display = "block";
+    }
 }
 
-addEventListener ("submit", validation);
-
-
+function checkLen(value, len){
+    if(value.length > len){
+        return true;
+    } else {
+        return false;
+    }
+}
