@@ -7,7 +7,6 @@ const  id = params.get("id");
 
 const url = 'https://serinetj.com/wp-json/wc/store/products/' + id
 
-console.log(url)
 
 const fetchProduct = async () => {
   const res = await fetch(url)
